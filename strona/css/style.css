@@ -59,6 +59,7 @@ button {
     outline: solid magenta 2px;
     float: left;
     width: 20%;
+    min-height: 50px
 }
 
 .collapse {

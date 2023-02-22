@@ -1,7 +1,4 @@
 <html>
-    <head>
-
-    </head>
     <body>
         <?php
             $_SESSION["user_id"]="";

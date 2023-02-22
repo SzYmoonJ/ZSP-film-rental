@@ -1,20 +1,17 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="../css/style.css">
+		<?php
+			include "../includes/header.php";
+			$_SESSION["site_id"]=4;
+		?>
 	</head>
 	<body>
 		<center>
 			<div class="inMain" style="margin-top:2%; background-color: lightblue; ">
-				<?php
-					include "../includes/header.php";
-					$_SESSION["site_id"]=4;
-				?>
-				<div class=lpanel>
-					<div class="navPanel">
-						<?php
-							include "../includes/nav.php";
-						?>
-					</div>
+				<div class="navPanel">
+					<?php
+						include "../includes/nav.php";
+					?>
 				</div>
 				<div class="rpanel">
 					<?php

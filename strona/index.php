@@ -1,15 +1,13 @@
 <html lang="pl-PL">
 	<head>
-		<link rel="stylesheet" href="css/style.css">
-		<meta charset="UTF-8">
+		<?php
+			include "includes/header.php";
+			$_SESSION["site_id"]=1;
+		?>
 	</head>
 	<body>
 		<center>
 			<div class="inMain" style="margin-top:2%; background-color: lightblue; ">
-				<?php
-					include "includes/header.php";
-					$_SESSION["site_id"]=1;
-				?>
 				<div class="navPanel">
 					<?php
 						include "includes/nav.php";

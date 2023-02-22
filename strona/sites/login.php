@@ -1,15 +1,15 @@
 <html lang="pl-PL">
 	<head>
-		<link rel="stylesheet" href="../css/style.css">
-		<meta charset="UTF-8">
+		<?php
+			include "../includes/header.php";
+			$_SESSION["site_id"]=2;
+			$_SESSION["loged"]=0;
+		?>
 	</head>
 	<body>
 		<center>
 			<div class="main" style="width: 500px">
 				<?php
-					include "../includes/header.php";
-					$_SESSION["site_id"]=2;
-					$_SESSION["loged"]=0;
 					include "../includes/nav.php";
 				?>
 				<form method="POST">

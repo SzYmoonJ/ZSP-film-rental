@@ -1,7 +1,10 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+	<head>
+		<?php
+			include "../includes/header.php";
+			$_SESSION["site_id"]=9;
+		?>
+	</head>
     <body>
         
     </body>

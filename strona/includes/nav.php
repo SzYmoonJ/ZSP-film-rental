@@ -1,8 +1,4 @@
 <html lang="pl-PL">
-	<head>
-		<link rel="stylesheet" href="../css/style.css">
-		<meta charset="UTF-8">
-	</head>
 	<body>
 		<?php
 			if (isset($_SESSION["loged"])){

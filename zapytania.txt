@@ -1,9 +1,9 @@
 ##ADD MOVIES
-INSERT INTO `movies`(`title`, `description`, `is_rent`) VALUES ('hary pota','magia i w ogole','0');
-INSERT INTO `movies`(`title`, `description`, `is_rent`) VALUES ('hary pota 2','wiecej magi i w ogole','0');
+INSERT INTO `movies`(`title`, `description`) VALUES ('hary pota','magia i w ogole');
+INSERT INTO `movies`(`title`, `description`) VALUES ('hary pota 2','wiecej magi i w ogole');
 
 ##USERS MOVIES
-INSERT INTO `usersmovies`(`users_id`, `movies_id`, `status`) VALUES ('1','1','1;);
+INSERT INTO `usersmovies`(`users_id`, `movies_id`, `status`) VALUES ('1','1','1');
 INSERT INTO `usersmovies`(`users_id`, `movies_id`, `status`) VALUES ('1','2','1');
 
 ##ADD USERS
