@@ -5,7 +5,7 @@
 	<body>
 		<form method="POST">
 			<center>
-				<div class="main" style="width: 400px; margin-top:10%; background-color: lightblue; ">
+				<div class="main" style="width: 500px">
 				<?php
 					include "../includes/header.php";
 					$_SESSION["site_id"]=123;

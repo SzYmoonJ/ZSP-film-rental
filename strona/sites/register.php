@@ -5,7 +5,7 @@
     <body>
         <form method="POST">
             <center>
-                <div class="main" style="width: 400px; margin-top:10%; background-color: lightblue; ">
+                <div class="main" style="width: 500px;">
                 <?php
                     include "../includes/header.php";
                     $_SESSION["site_id"]=3;
@@ -16,7 +16,7 @@
                 <div class="container"><br> Nazwisko: <input name="surname"></div>
                 <div class="container"><br> Email: <input name="email"></div>
                 <div class="container"><br> Hasło: <input name="pass" type="password"><br></div>
-                <div class="container"><br><input type="submit"></div>
+                <div class="container"><button type="submit">Register</button></div>
                     <?php
                         $con = new mysqli("127.0.0.1","root","","film-rental");
                         $res = $con->query("SELECT * FROM users");

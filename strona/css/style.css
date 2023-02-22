@@ -1,53 +1,66 @@
-html{
+html {
     font-family: Arial;
 }
-a{
-    font-weight:bold;
-    background-color:white;
+
+a {
+    font-weight: bold;
+    background-color: white;
     text-decoration: none;
     color: black;
     outline: 2px black solid;
 }
-.foot{
+
+button {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    outline: 0.7px black solid;
+}
+
+.foot {
     clear: both;
 }
-.main{
+
+.main {
+    margin-top: 10%;
+    background-color: lightblue;
     padding-top: 5px;
     width: 50%;
-    background: none;
-    background-color: white;
-    box-shadow: 2px black solid;
     outline: 10px blue double;
 }
 
-.inMain{
+.inMain {
     width: 80%;
     background: none;
     background-color: white;
-    box-shadow: 2px black;
     outline: 10px blue double;
 }
-.container{
+
+.container {
     width: 200px;
     height: 50px;
     margin: 10px;
 }
-.lpanel{
-    float:left;
-    width:50%;
-    text-align:left;
+
+.lpanel {
+    float: left;
+    width: 50%;
+    text-align: left;
 }
+
 .rpanel {
     float: right;
     width: 50%;
     text-align: center;
 }
-.navPanel { 
-    text-align:center;
+
+.navPanel {
+    text-align: center;
     outline: solid magenta 2px;
     float: left;
-    width: 18%;
+    width: 20%;
 }
+
 .collapse {
     display: none
 }
