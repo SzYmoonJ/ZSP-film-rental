@@ -1,9 +1,11 @@
 html {
     font-family: Arial;
 }
+
 body {
     background-color: #7EA1FF;
 }
+
 a {
     font-weight: bold;
     background-color: white;
@@ -39,7 +41,6 @@ button {
 .inMain {
     width: 80%;
     background: none;
-    background-color: white;
     outline: 10px blue double;
 }
 
