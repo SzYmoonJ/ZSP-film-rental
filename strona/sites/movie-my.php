@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="../css/style.css">
 		<?php
 			include "../includes/header.php";
 			$_SESSION["site_id"]=4;
@@ -15,15 +16,36 @@
 				</div>
 				<div class="rpanel">
 					<?php
-					$con = new mysqli('localhost','root','','film-rental');
-					$li = 'SELECT movies.id, movies.title, movies.description FROM movies JOIN usersmovies ON movies.id=usersmovies.movies_id WHERE usersmovies.users_id="'.$_SESSION["user_id"][0]["id"].'"';
-					$result = $con -> query($li);
-					$list = $result -> fetch_all(MYSQLI_ASSOC);
-					for ($i=0; $i<count($list);$i++){
-						echo "Id:".'&nbsp'.$list[$i]["id"].'&nbsp';
-						echo $list[$i]["title"].'&nbsp';
-						echo "Opis:".'&nbsp'.$list[$i]["description"].'<br> <br>';
-					};
+						$con = new mysqli('localhost','root','','film-rental');
+						$li = 'SELECT movies.id, movies.title, movies.description FROM movies JOIN usersmovies ON movies.id=usersmovies.movies_id WHERE usersmovies.users_id="'.$_SESSION["user_id"][0]["id"].'"';
+						$result = $con -> query($li);
+						$list = $result -> fetch_all(MYSQLI_ASSOC);
+						echo '<table>';
+						echo '<tr>';
+							echo '<td>';
+								echo '<p>Id:</p>';
+							echo '</td>';
+							echo '<td>';
+								echo '<p>Title:</p>';
+							echo '</td>';
+							echo '<td>';
+								echo '<p>Description:</p>';
+							echo '</td>';
+						echo '</tr>';
+							for ($i=0; $i<count($list);$i++){
+								echo '<tr>';
+								echo	'<td>';
+											echo $list[$i]["id"];
+								echo	'</td>';
+								echo	'<td>';
+											echo $list[$i]["title"];
+								echo	'</td>';
+								echo	'<td>';
+											echo $list[$i]["description"];
+								echo	'</td>';
+								echo '</tr>';
+							};
+						echo '</table>'
 					?>
 				</div>
 				<div class="foot">

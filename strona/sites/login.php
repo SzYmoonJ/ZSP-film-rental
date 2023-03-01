@@ -1,5 +1,6 @@
 <html lang="pl-PL">
 	<head>
+	    <link rel="stylesheet" href="../css/style.css">
 		<?php
 			include "../includes/header.php";
 			$_SESSION["site_id"]=2;

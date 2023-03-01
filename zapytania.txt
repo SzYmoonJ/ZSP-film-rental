@@ -2,10 +2,11 @@
 INSERT INTO `movies`(`title`, `description`) VALUES ('hary pota','magia i w ogole');
 INSERT INTO `movies`(`title`, `description`) VALUES ('hary pota 2','wiecej magi i w ogole');
 
+##ADD USERS
+INSERT INTO `users`(`email`, `password`, `name`, `surname`, `is_admin`) VALUES ('admin123@gmail.com','admin123','To','Admin','1');
+INSERT INTO `users`(`email`, `password`, `name`, `surname`, `is_admin`) VALUES ('anon123@gmail.com','haslo123','ToNie','Admin','0');
+
 ##USERS MOVIES
 INSERT INTO `usersmovies`(`users_id`, `movies_id`, `status`) VALUES ('1','1','1');
 INSERT INTO `usersmovies`(`users_id`, `movies_id`, `status`) VALUES ('1','2','1');
 
-##ADD USERS
-INSERT INTO `users`(`email`, `password`, `name`, `surname`, `is_admin`) VALUES ('admin123@gmail.com','admin123','To','Admin','1');
-INSERT INTO `users`(`email`, `password`, `name`, `surname`, `is_admin`) VALUES ('anon123@gmail.com','haslo123','ToNie','Admin','0');

@@ -1,13 +1,20 @@
 html {
     font-family: Arial;
 }
-
+body {
+    background-color: #7EA1FF;
+}
 a {
     font-weight: bold;
     background-color: white;
     text-decoration: none;
     color: black;
     outline: 2px black solid;
+}
+
+td{
+    padding: 0 10 0 10;
+
 }
 
 button {
@@ -50,18 +57,16 @@ button {
 
 .rpanel {
     float: right;
-    width: 50%;
-    text-align: center;
+    width: 75%;
+    text-align: left;
 }
 
 .navPanel {
     text-align: center;
     outline: solid magenta 2px;
     float: left;
-    width: 20%;
-    min-height: 50px
-}
-
-.collapse {
-    display: none
+    width: 15%;
+    min-height:50%;
+    margin-bottom: -23px;
+    padding-left: 5px;
 }
